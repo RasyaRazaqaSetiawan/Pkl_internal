@@ -1,4 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.backend')
+
+@section('content')
+ini adalah isi kontent
+@endsection
+
+{{-- @extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -20,4 +26,4 @@
         </div>
     </div>
 </div>
-@endsection
+@endsection --}}

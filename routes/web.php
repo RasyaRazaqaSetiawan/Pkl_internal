@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\UserController;
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('user', UserController::class);
+});
 
 Route::get('/', function () {
     return view('layouts.backend');
@@ -29,8 +34,10 @@ Auth::routes(
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 use App\Http\Controllers\BrandController;
+
 Route::resource('brand', BrandController::class);
 
 use App\Http\Controllers\ProductController;
+
 Route::resource('product', ProductController::class);
 

@@ -610,7 +610,7 @@
                         <div class="text-center">
                             <img src="https://placehold.co/110x110/png" class="rounded-circle p-1 shadow mb-3"
                                 width="90" height="90" alt="">
-                            <h5 class="user-name mb-0 fw-bold">Hello, Jhon</h5>
+                            <h5 class="user-name mb-0 fw-bold">Hello, {{Auth::user()->name}}</h5>
                         </div>
                     </a>
                     <hr class="dropdown-divider">
