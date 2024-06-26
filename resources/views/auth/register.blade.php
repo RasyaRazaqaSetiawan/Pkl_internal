@@ -83,10 +83,7 @@
                                     <form class="row g-3">
                                         <div class="col-12">
                                             <label for="inputUsername" class="form-label">Username</label>
-                                            <input type="text"
-                                                class="form-control @error('name') is-invalid @enderror" name="name"
-                                                value="{{ old('name') }}" required autocomplete="name" autofocus
-                                                placeholder="Jhon">
+                                            <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Jhon">
                                             @error('name')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -123,9 +120,12 @@
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <label for="inputChoosePassword" class="form-label">Confirm Password</label>
+                                            <label for="inputChoosePassword" class="form-label">Confirm
+                                                Password</label>
                                             <div class="input-group" id="show_hide_password">
-                                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm Password">
+                                                <input id="password-confirm" type="password" class="form-control"
+                                                    name="password_confirmation" required autocomplete="new-password"
+                                                    placeholder="Confirm Password">
                                                 <a href="javascript:;" class="input-group-text bg-transparent"><i
                                                         class="bi bi-eye-slash-fill"></i></a>
                                             </div>
